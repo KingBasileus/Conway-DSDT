@@ -32,6 +32,7 @@ if option == "JSON" or option == "CSV":
     elif option == "CSV":
         with open(csv_file, 'r') as file:
             data_csv = csv.DictReader(file)
+            #Printing it out
             for row in data_csv:
                 print("-----  " + row['user_id'] + "  -----")
                 print(row['Date received'])
